@@ -5,7 +5,7 @@ export default async function Home() {
 
   
 
-  const { data, error } = await supabase
+  const { data } = await supabase
     .from("users")
     .select("*");
 
